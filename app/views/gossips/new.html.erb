@@ -1,0 +1,24 @@
+<h1>Nouveau gossip</h1>
+<p>Ici on fait des nouveaux gossips</p>
+
+
+<%= form_for @gossip do |f| %>
+
+<div class="form-group">
+	<%= f.text_field :title,placeholder: "Nom", class: 'form-control' %>
+</div>
+
+<div class="form-group">
+	<%= f.text_field :content,placeholder: "Gossip", class: 'form-control' %>
+</div>
+
+<div class="form-group">
+	<%= f.text_field :anonymous_gossiper,placeholder: "Auteur Anonyme", class: 'form-control' %>
+</div>
+
+<div class="form-group">
+	<button class="btn btn-primary" type="submit">Créer le gossip</button>
+</div>
+
+
+<% end %>
